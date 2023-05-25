@@ -23,9 +23,9 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-// $app->withFacades();
+$app->withFacades();
 
-// $app->withEloquent();
+$app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ $app->register(\Nuwave\Lighthouse\Validation\ValidationServiceProvider::class);
 
 $app->register(MLL\GraphQLPlayground\GraphQLPlaygroundServiceProvider::class);
 
-$app->configure('graphiql');
+$app->configure('graphql-playground');
 /*
 |--------------------------------------------------------------------------
 | Register Middleware
