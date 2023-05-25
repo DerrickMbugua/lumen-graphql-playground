@@ -16,6 +16,10 @@ type Mutation {
   createUser(name: String!,email: String!,password: String!): User! @create
 }
 
+type Mutation {
+  updateUser(id: ID!, name: String): User @update
+}
+
 "Account of a person who utilizes this application."
 type User {
     "Unique primary key."
